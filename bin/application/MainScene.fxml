@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import java.util.ArrayList?>
+<?import java.lang.String?>
+<AnchorPane fx:id="errormsg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainSceneController">
+   <children>
+      <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="92.0" layoutY="106.0" prefHeight="356.0" prefWidth="430.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints fillHeight="false" maxHeight="96.80000610351563" minHeight="10.0" prefHeight="80.80000610351563" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" maxHeight="131.59999389648436" minHeight="0.0" prefHeight="22.00000610351563" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" maxHeight="236.80000000000004" minHeight="10.0" prefHeight="92.80000000000001" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" maxHeight="266.1999877929687" minHeight="10.0" prefHeight="19.19999999999999" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" maxHeight="266.1999877929687" minHeight="10.0" prefHeight="77.8000183105469" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" maxHeight="266.1999877929687" minHeight="10.0" prefHeight="23.600000000000023" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="name1" alignment="CENTER" prefHeight="18.0" prefWidth="135.0" text="" textAlignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="name2" alignment="CENTER" prefHeight="18.0" prefWidth="135.0" text="" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="name3" alignment="CENTER" prefHeight="18.0" prefWidth="135.0" text="" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="name4" alignment="CENTER" prefHeight="18.0" prefWidth="135.0" text="" textAlignment="CENTER" GridPane.rowIndex="3" />
+            <Label fx:id="name5" alignment="CENTER" prefHeight="18.0" prefWidth="135.0" text="" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="name6" alignment="CENTER" prefHeight="18.0" prefWidth="135.0" text="" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="name7" alignment="CENTER" prefHeight="18.0" prefWidth="135.0" text="" textAlignment="CENTER" GridPane.rowIndex="5" />
+            <Label fx:id="name8" alignment="CENTER" prefHeight="18.0" prefWidth="135.0" text="" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="name9" alignment="CENTER" prefHeight="18.0" prefWidth="135.0" text="" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        	
+        	<fx:define>
+        		<ArrayList fx:id="labellist">
+        			 <fx:reference source="name1" />
+        			 <fx:reference source="name2" />
+        			 <fx:reference source="name3" />
+        			 <fx:reference source="name4" />
+        			 <fx:reference source="name5" />
+        			 <fx:reference source="name6" />
+        			 <fx:reference source="name7" />
+        			 <fx:reference source="name8" />
+        			 <fx:reference source="name9" />	
+        		</ArrayList>
+        	</fx:define>
+        	
+        	
+            <Rectangle fx:id="rec1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.halignment="CENTER" />
+            <Rectangle fx:id="rec2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Rectangle fx:id="rec3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <Rectangle fx:id="rec4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Rectangle fx:id="rec5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+         	<Rectangle fx:id="rec6" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+         	<Rectangle fx:id="rec7" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+			<Rectangle fx:id="rec8" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+			<Rectangle fx:id="rec9" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.columnIndex="2"/>         	
+         
+         <fx:define>
+         <ArrayList fx:id="reclist">
+        			 <fx:reference source="rec1" />
+        			 <fx:reference source="rec2" />
+        			 <fx:reference source="rec3" />
+        			 <fx:reference source="rec4" />
+        			 <fx:reference source="rec5" />
+        			 <fx:reference source="rec6" />
+        			 <fx:reference source="rec7" />
+        			 <fx:reference source="rec8" />
+        			 <fx:reference source="rec9" />	
+        		</ArrayList>
+         </fx:define>
+         
+         </children>
+      </GridPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="85.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="430.0" />
+      <Label layoutX="225.0" layoutY="21.0" prefHeight="42.0" prefWidth="166.0" text="Teacher" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="521.0" text="Student Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField id="sname" fx:id="sname" layoutX="233.0" layoutY="521.0" />
+      <Label layoutX="85.0" layoutY="569.0" text="Student Color">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmb" layoutX="232.0" layoutY="569.0" prefWidth="150.0" value="RED">
+         <items>
+	       <FXCollections fx:factory="observableArrayList">
+				<String fx:value="RED"/>
+				<String fx:value="PINK"/>
+				<String fx:value="GREEN"/>
+				<String fx:value="YELLOW"/>
+				<String fx:value="GREY"/>
+				<String fx:value="CYAN"/>
+				<String fx:value="ORANGE"/>
+				<String fx:value="BLUE"/>
+				<String fx:value="PURPLE"/>
+	        </FXCollections>
+	    </items>
+      </ComboBox>
+      <Button layoutX="258.0" layoutY="618.0" mnemonicParsing="false" onAction="#btnOKClicked" text="Add Student" />
+      <Label id="msg" fx:id="msg" layoutX="91.0" layoutY="480.0" prefHeight="18.0" prefWidth="166.0" text="" />
+   </children>
+</AnchorPane>
